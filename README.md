@@ -1,5 +1,5 @@
 # Presuff
-Prepend or append a string to the name of all files in a directory with specified extension. 
+Prepend or append a string to the name of all files in a directory with specified extension. POSIX-like.
 
 ## Usage
 ```
