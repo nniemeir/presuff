@@ -14,8 +14,14 @@
 
 typedef enum { MODE_PREPEND = 1, MODE_APPEND = 2 } Mode;
 
-static const char dot[] = ".";
+struct args {
+  char dir_arg[PATH_MAX];
+  char dir_path[PATH_MAX];
+  char filtered_extension[NAME_MAX];
+  char pattern[NAME_MAX];
+  int mode;
+};
 
-int pattern_rename(const char *directoryPath, const char *pattern,
-                   const char *filteredExtension, long mode);
+int pattern_rename(struct args *current_args);
+
 #endif
